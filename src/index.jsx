@@ -32,7 +32,7 @@ const router = createBrowserRouter([
 //Theme object created using createTheme to override the CSS styles of MUI library
 export const theme = createTheme({
   typography: {
-    fontFamily: "Poppins , sans-serif",
+    fontFamily: "Ubuntu , sans-serif",
   },
   palette: {
     primary: {

@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Grid2, Typography } from "@mui/material";
 import doctorIcon from "../../assets/Doctor.png";
 import pharmacyIcon from "../../assets/Drugstore.png";
 import hospitalIcon from "../../assets/Hospital.png";
@@ -31,22 +31,22 @@ export default function HeroServices() {
       >
         You may be looking for
       </Typography>
-      <Grid
+      <Grid2
         container
         columnSpacing={{ xs: 1, md: 2 }}
         justifyContent={"center"}
       >
         {Services.map((service) => (
-          <Grid item key={service.title} xs={4} md={2.4}>
+          <Grid2 item key={service.title} xs={4} md={2.4}>
             <IconCard
               img={service.img}
               title={service.title}
               active={service.active || false}
               bgColor="#FAFBFE"
             />
-          </Grid>
+          </Grid2>
         ))}
-      </Grid>
+      </Grid2>
     </Box>
   );
 }

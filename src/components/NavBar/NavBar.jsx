@@ -35,6 +35,7 @@ export default function NavBar() {
           alignItems="center"
           justifyContent="space-between"
           py={2}
+          
         >
           <Link to="/">
             <img src={logo} alt="Logo" height={27} />
@@ -48,6 +49,7 @@ export default function NavBar() {
             pt={{ xs: 12, md: 1 }}
             pb={{ xs: 4, md: 1 }}
             px={{ xs: 4, md: 0 }}
+            
           >
             <Link>Find Doctors</Link>
             <Link to="/search">Hospitals</Link>

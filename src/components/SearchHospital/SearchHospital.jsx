@@ -27,9 +27,15 @@ export default function SearchHospital() {
     fetchStates();
   }, []);
 
+  // useEffect(()=>{
+  //   console.log(formData);
+  // },[])
+
   useEffect(() => {
     const fetchCities = async () => {
       setCities([]);
+      
+      
       setFormData((prev) => ({ ...prev, city: "" }));
       try {
         const data = await axios.get(
